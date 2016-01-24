@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head> 
+    <meta charset="UTF-8">
+    <meta property="og:image" content="img/virtual-world-chat.png" />  
+    <title>仮想空間チャット</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="info">
+        <h2>仮想空間チャット</h2>
+        <p><b> ■操作方法： </b></p>
+        
+    Ｗキー：前<br /> Ｓキー：後<br /> Ｄキー：右回転<br /> Ａキー：左回転
+      <br /><br />  ログインユーザー数: <span id="chickencount"></span>
+
+<!--
+        <br /><br /><button id="a" onClick="value = 'true'"></button><br />
+        <p><b> ■チャット： </b></p>
+ 
+         <div class="container">
+            <div class="postarea cf">
+                <div class="postarea-name">
+                    <textarea name="myNAME" id="myname" class="myname" cols="20" rows="1" placeholder="自分の名前を入力"></textarea>
+                </div>
+   
+        <div class="postarea-text">
+            <textarea name="myTEXT" id="msg" class="msg" cols="20" rows="3" placeholder="メッセージを入力"></textarea>
+         </div>
+    
+        <button name="button" class="postarea-button" onClick="clickEvent()">投稿</button>
+            </div>
+        </div>    
+-->
+<!--              <div class="content" id="output"></div> -->
+<!--<ul><li class="content" style="list-style:none;"></li></ul>    -->
+<ul id="board" class="content" style="list-style: none;"></ul>    
+      </div>
+      
+      
+      
+<!--ビデオの記述を追加      -->
+<video id="video" autoplay loop style="display:none">
+			<source src="mp4/sintel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			<source src="mp4/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+		</video>
+      
+      
+      
+
+    <input class="chat" placeholder="チャットを入力" type="text" />
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
+ <script src='js/MorphAnimMesh.js'></script>
+<script src="js/TextGeometry.js"></script>
+<script src="js/FontUtils.js"></script>
+<script src="js/helvetiker_regular.typeface.js"></script>         
+      
+      
+<!--
+      <script src="js/shaders/ConvolutionShader.js"></script>
+		<script src="js/shaders/CopyShader.js"></script>
+
+		<script src="js/postprocessing/EffectComposer.js"></script>
+		<script src="js/postprocessing/RenderPass.js"></script>
+		<script src="js/postprocessing/MaskPass.js"></script>
+		<script src="js/postprocessing/BloomPass.js"></script>
+		<script src="js/postprocessing/ShaderPass.js"></script>
+-->
+
+      
+      
+    <!--<script src='http://threejs.org/examples/fonts/helvetiker_regular.typeface.js'></script>-->
+    <script src="http://jsrun.it/assets/a/q/3/W/aq3Wl" type="text/javascript"></script>            
+    <script src='http://cdn.socket.io/socket.io-1.2.0.js'></script>
+    <script src='js/OBJMTLLoader.js'></script>
+    <script src='js/MTLLoader.js'></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+      
+  </body>
+</html>

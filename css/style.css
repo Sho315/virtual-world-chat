@@ -1,0 +1,23 @@
+body {
+  font-family: Monospace;
+  background-color: #fff;
+  margin: 0;
+  overflow: hidden;
+}
+
+input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 28px;
+  border: 1px solid #bbb;
+    
+z-index: 9999;
+}
+
+.info {
+  position: absolute;
+  margin: 10px;
+  font-size: 14px;
+}
